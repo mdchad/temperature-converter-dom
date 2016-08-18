@@ -3,20 +3,30 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
         <link href="style.css" rel="stylesheet" style="text/css">
+        <script src="main.js"></script>
         <title>Temperature Converter</title>
     </head>
     <body>
         <h1>Temperature Converter</h1>
         <div class="search-wrapper">
             <form>
-                <input type="numbers" name="focus" required class="search-box" placeholder="&#8451">
+                <input type="numbers" name="focus" required class="search-box" id="celsius" placeholder="&#8451">
                 
                 <button class="close-icon" type="reset"><img src="cancel.png"></button>
+                <label id="block1" >
+                    <input type="radio" name="temp" value="celsius">Celsius
+                </label>
+                <label id="block2">
+                    <input type="radio" name="temp"  value="fahrenheit">Fahrenheit
+                </label>    
                 <br>
-                <button type="submit" class="arrow"><img src="down-arrow.png"></button>
+                <button type="button" class="arrow" id="submit" onclick="c2f"><img src="down-arrow.png"></button>
             </form>
-        <div class="convert">   
-            <p>&#8457</p>
+        <div id="convert">   
+            <p id="fahrenheit">&#8457</p>
+        </div>
+        <div>
+            <footer>This website is created by Irsyad for GA assignment </footer>
         </div>
         
     

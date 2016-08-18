@@ -40,6 +40,7 @@ button{
 	margin-top: 50px;
     text-align: center;
     padding-bottom: 1px;
+   
 }
 .search-box {
 	width: 80%;
@@ -56,6 +57,10 @@ button{
 .arrow {
     position: absolute;
     left: 210px;
+}
+
+.close-icon{
+    border-right: 1px dotted white;
 }
 /*
 .close-icon {
@@ -93,7 +98,7 @@ button{
 }
 */
 
-.convert {
+#convert {
     width: 500px;
 	margin: auto;
 	margin-top: 80px;
@@ -102,7 +107,7 @@ button{
 }
 
 
-p {
+#fahrenheit {
     width: 317px;
     font-size: 34px;
     line-height: 44px;
@@ -110,4 +115,26 @@ p {
     padding: 10px;
     position: relative;
    text-align: left;
+}
+
+#block1{
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#block2 {
+    position: absolute;
+    top: 70px;
+    right: -34px;
+    background: transparent;
+    cursor: pointer;
+}
+
+footer {
+    height: 100%;
+    padding-top: 120px;
+    font-size: 11pt;
 }
