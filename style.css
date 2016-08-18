@@ -1,0 +1,113 @@
+body {
+    background: #3FBBD0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 40pt;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+::-webkit-input-placeholder {
+   color: #222;
+   font-family: 'Raleway', sans-serif;   
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+	padding: 10px;
+}
+.search-wrapper {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.search-box {
+	width: 80%;
+    border: none;
+	border-bottom: 1px dotted black;
+    outline: 0;
+    background: transparent;
+    width: 335px;
+    font-size: 34px;
+    line-height: 44px;
+    color: #222;
+}
+
+.arrow {
+    position: absolute;
+    left: 210px;
+}
+/*
+.close-icon {
+	border: 1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: transparent;
+	z-index:1;
+	right: 35px;
+	top: 0;
+	bottom: 30px;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
+    border-color: white;
+}
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+*/
+
+.convert {
+    width: 500px;
+	margin: auto;
+	margin-top: 80px;
+    padding-left: 50px;
+    
+}
+
+
+p {
+    width: 317px;
+    font-size: 34px;
+    line-height: 44px;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+    position: relative;
+   text-align: left;
+}
