@@ -1,16 +1,44 @@
-function setCelsiusToF() {
-var cel=document.getElementById("celsius")
-var far=document.getElementById("fahrenheit")
-
-var result = celsius.value * 1.8 + 32;
-fahrenheit.textContext = result;
+function fahrenheitToCelsius( f ) {
+   var c = (f - 32) * 5/9;
+   c = Math.floor(c);
+   console.log(c);
+   return c;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("DOM loaded");
+function celsiusToFahrenheight( c ) {
+   var f = (c * 9/5) + 32;
+   f = Math.floor(f);
+   return f;
+}
 
-  // attach a click handler to the set title button
-  document.getElementById("submit").addEventListener("click", function() {
-    console.log("set title button clicked");
-    setCelsiusToF();
-  });
+window.onload = function() {
+   document.getElementById("clear").onclick = clearScreen;
+   document.getElementById("submit").onclick = convert;
+  //  document.getElementById("toC").checked = true;
+}
+
+function clearScreen() {
+   location.reload();
+}
+
+function convert() {
+   var t = document.getElementById("tempInput").value;
+   var tv = parseFloat(t);
+
+  addEventListener("keypress", function() {
+   if (event.keyCode == 13)
+     document.getElementById("submit") = convert();
+     document.getElementById("clear") = clearScreen();
+
+});
+console.log(tv);
+var cT = document.getElementsByClassName('temp');
+if (cT[0].checked) {
+   document.getElementById("output").value = fahrenheitToCelsius(tv) + "C";
+}
+else if (cT[1]) {
+   document.getElementById("output").value = celsiusToFahrenheight(tv) + "F";
+}
+return;
+}
+celsiusToFahrenheight(tv)

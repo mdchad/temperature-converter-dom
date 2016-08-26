@@ -19,7 +19,7 @@ h1 {
 
 ::-webkit-input-placeholder {
    color: #222;
-   font-family: 'Raleway', sans-serif;   
+   font-family: 'Raleway', sans-serif;
 }
 
 button{
@@ -29,18 +29,23 @@ button{
     margin-top: 30px;
 }
 
+/*input {
+  position: absolute;
+  top: 400px;
+  left:250px;
+}*/
 
 .search-box,.close-icon,.search-wrapper {
 	position: relative;
 	padding: 10px;
 }
 .search-wrapper {
-	width: 500px;
-	margin: auto;
-	margin-top: 50px;
+	  width: 500px;
+	  margin: auto;
+	  margin-top: 50px;
     text-align: center;
     padding-bottom: 1px;
-   
+
 }
 .search-box {
 	width: 80%;
@@ -100,28 +105,31 @@ button{
 
 #convert {
     width: 500px;
-	margin: auto;
-	margin-top: 80px;
+	  margin: auto;
+	  margin-top: 80px;
     padding-left: 50px;
-    
+
 }
 
 
-#fahrenheit {
-    width: 317px;
+#output {
+    width: 343px;
+    margin-top: 100px;
+    margin-left: -40px;
     font-size: 34px;
     line-height: 44px;
+    border: none;
     border-bottom: 1px dotted black;
     padding: 10px;
     position: relative;
-   text-align: left;
+    text-align: left;
+    background-color: transparent;
 }
 
 #block1{
     position: absolute;
     top: 40px;
     right: -10px;
-    background: transparent;
     cursor: pointer;
 }
 
@@ -129,12 +137,15 @@ button{
     position: absolute;
     top: 70px;
     right: -34px;
-    background: transparent;
     cursor: pointer;
 }
 
 footer {
-    height: 100%;
-    padding-top: 120px;
+    height: 1%;
+    padding-top: 90px;
     font-size: 11pt;
+}
+
+#submit {
+  display: block;
 }
